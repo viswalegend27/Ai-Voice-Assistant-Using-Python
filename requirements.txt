@@ -1,0 +1,6 @@
+google-genai
+python-dotenv
+pyttsx3
+SpeechRecognition
+pywin32
+pyaudio
