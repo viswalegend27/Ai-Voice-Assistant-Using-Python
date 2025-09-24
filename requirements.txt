@@ -4,3 +4,5 @@ pyttsx3
 SpeechRecognition
 pywin32
 pyaudio
+sounddevice
+numpy
