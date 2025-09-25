@@ -98,7 +98,7 @@ def _clean_for_speech(text):
     text = text.replace('*', '').replace('#', '')
     return ' '.join(text.split())  
 
-def handle_general_query(command):
+def handle_query(command):
     speak("Let me check on that for you, Boss.")
     answer = _clean_for_speech(chat_with_gemini(command))
     speak(answer)
@@ -133,7 +133,7 @@ def run_assistant():
             if handler_function(command, speak, generate_response) is False:
                 running = False
         else:
-            handle_general_query(command)
+            handle_query(command)
 
 if __name__ == "__main__":
     run_assistant()
